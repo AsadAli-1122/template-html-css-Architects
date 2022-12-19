@@ -1,0 +1,250 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+  } 
+  body,h1,h2,h3,p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h2,h3{
+      font-weight: normal;
+  }
+  /* div{
+    border: 1px solid black;
+  } */
+  .header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    color: black;
+    z-index: 1;
+    box-shadow: 5px 5px 5px 1px lightgray;
+  }
+  .header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+  }
+  .header a:hover{
+    background-color: gray;
+    color: #fff;
+  }
+  .header>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .main-logo{
+    width: 100%;
+    height: 600px;
+    background-image: url(img/architect.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-logo>h1{
+    color: #fff;
+  }
+  .main-logo>h1>strong{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    filter: opacity(70%);
+  }
+  .projects,.about,.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+  }
+  hr{
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid rgb(218, 217, 217);
+  }
+  .house,.makers{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .house-item{
+    width: 24%;
+    height: 180px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .house-item>p{
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    display: inline-block;
+  }
+  .makers>div{
+    display: flex;
+    flex-direction: column;
+  }
+  .makers>div>img{
+    width: 100%;
+    filter: grayscale(0.7);
+  }
+  .team{
+    width: 24%;
+    margin-top: 15px;
+  }
+  .team>h2{
+    margin-top: 15px;
+  }
+  .team>h3{
+    margin-top: 22px;
+    color: rgb(155, 155, 155);
+    font-size: medium;
+  }
+  .team>p{
+    margin-top: 22px;
+  }
+  .team>button{
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 0;
+    border: none;
+    font-size: large;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+  .contact>input{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(218, 217, 217);
+  }
+  .contact>button{
+    padding: 15px;
+    width: 170px;
+    font-size: 15px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 0;
+  }
+  .contact>button:hover{
+    background-color: darkgray;
+    color: black;
+  }
+  .contact>img{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+  .footer{
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer>p>a{
+    color: #fff;
+    text-decoration: underline;
+  }
+  #house-item-1{
+    background-image: url(img/house5.jpg);
+  }
+  #house-item-2{
+    background-image: url(img/house2.jpg);
+  }
+  #house-item-3{
+    background-image: url(img/house3.jpg);
+  }
+  #house-item-4{
+    background-image: url(img/house4.jpg);
+  }
+  #house-item-5{
+    background-image: url(img/house2.jpg);
+  }
+  #house-item-6{
+    background-image: url(img/house5.jpg);
+  }
+  #house-item-7{
+    background-image: url(img/house4.jpg);
+  }
+  #house-item-8{
+    background-image: url(img/house3.jpg);
+  }
+  
+  @media screen and (min-width: 421px) and (max-width: 786px) {
+    
+  .header a{
+    padding: 10px;
+    letter-spacing: 2px;
+  }
+  .header>div{
+    padding: 10px;
+  }
+  .art{
+    display: none;
+  }
+  .main-logo{
+    height: 500px;
+  }
+  .house{
+    flex-direction: row;
+  }
+  .house-item{
+    width: 49%;
+  }
+  .makers{
+    flex-direction: row;
+  }
+  .team{
+    width: 49%;
+  }
+  
+  
+  }
+  
+  
+  @media screen and (max-width: 420px) {
+  
+  .header a{
+    padding: 5px;
+    letter-spacing: 1px;
+  }
+  .header>div{
+    padding: 5px;
+  }
+  .art{
+    display: none;
+  }
+  .main-logo{
+    height: 300px;
+  }
+  .house{
+    flex-direction: column;
+  }
+  .house-item{
+    width: 100%;
+  }
+  .makers{
+    flex-direction: column;
+  }
+  .team{
+    width: 100%;
+  }
+  
+  }
+  
+  
